@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "836949578497",
+    "project_id": "ecocondor-aa644",
+    "storage_bucket": "ecocondor-aa644.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836949578497:android:4405cb6480a6f6589e0100",
+        "android_client_info": {
+          "package_name": "com.ecocondor.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUyzntCFeQ27hDyCEbF00ZlX8dXxbz9VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

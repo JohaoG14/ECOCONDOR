@@ -1,0 +1,416 @@
+Starting a Gradle Daemon, 1 busy Daemon could not be reused, use --status for details
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Configure project :shared_preferences_android
+Your project is configured with Android NDK 23.1.7779620, but the following plugin(s) depend on a different Android NDK version:
+- cloud_firestore requires Android NDK 25.1.8937393
+- firebase_auth requires Android NDK 25.1.8937393
+- firebase_core requires Android NDK 25.1.8937393
+- shared_preferences_android requires Android NDK 25.1.8937393
+Fix this issue by using the highest Android NDK version (they are backward compatible).
+Add the following to C:\Users\Usuario\.gemini\antigravity\scratch\ECOCONDOR\ecocondor_app\android\app\build.gradle:
+
+    android {
+        ndkVersion = "25.1.8937393"
+        ...
+    }
+
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:compileFlutterBuildDebug
+> Task :app:packJniLibsflutterBuildDebug
+> Task :cloud_firestore:preBuild UP-TO-DATE
+> Task :cloud_firestore:preDebugBuild UP-TO-DATE
+> Task :firebase_auth:preBuild UP-TO-DATE
+> Task :firebase_auth:preDebugBuild UP-TO-DATE
+> Task :firebase_core:preBuild UP-TO-DATE
+> Task :firebase_core:preDebugBuild UP-TO-DATE
+> Task :shared_preferences_android:preBuild UP-TO-DATE
+> Task :shared_preferences_android:preDebugBuild UP-TO-DATE
+> Task :firebase_auth:writeDebugAarMetadata
+> Task :cloud_firestore:writeDebugAarMetadata
+> Task :firebase_core:writeDebugAarMetadata
+> Task :shared_preferences_android:writeDebugAarMetadata
+> Task :app:cleanMergeDebugAssets UP-TO-DATE
+> Task :app:checkDebugAarMetadata
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :cloud_firestore:mergeDebugShaders
+> Task :cloud_firestore:compileDebugShaders NO-SOURCE
+> Task :cloud_firestore:generateDebugAssets UP-TO-DATE
+> Task :cloud_firestore:packageDebugAssets
+> Task :firebase_auth:mergeDebugShaders
+> Task :firebase_auth:compileDebugShaders NO-SOURCE
+> Task :firebase_auth:generateDebugAssets UP-TO-DATE
+> Task :firebase_auth:packageDebugAssets
+> Task :firebase_core:mergeDebugShaders
+> Task :firebase_core:compileDebugShaders NO-SOURCE
+> Task :firebase_core:generateDebugAssets UP-TO-DATE
+> Task :firebase_core:packageDebugAssets
+> Task :shared_preferences_android:mergeDebugShaders
+> Task :shared_preferences_android:compileDebugShaders NO-SOURCE
+> Task :shared_preferences_android:generateDebugAssets UP-TO-DATE
+> Task :shared_preferences_android:packageDebugAssets
+> Task :app:mergeDebugAssets
+> Task :app:copyFlutterAssetsDebug
+> Task :app:generateDebugResValues
+> Task :app:processDebugGoogleServices
+> Task :cloud_firestore:generateDebugResValues
+> Task :cloud_firestore:generateDebugResources
+> Task :cloud_firestore:packageDebugResources
+> Task :firebase_auth:generateDebugResValues
+> Task :firebase_auth:generateDebugResources
+> Task :firebase_auth:packageDebugResources
+> Task :firebase_core:generateDebugResValues
+> Task :firebase_core:generateDebugResources
+> Task :firebase_core:packageDebugResources
+> Task :shared_preferences_android:generateDebugResValues
+> Task :shared_preferences_android:generateDebugResources
+> Task :shared_preferences_android:packageDebugResources
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :cloud_firestore:extractDeepLinksDebug
+> Task :firebase_auth:extractDeepLinksDebug
+> Task :firebase_core:extractDeepLinksDebug
+> Task :shared_preferences_android:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+
+> Task :shared_preferences_android:processDebugManifest
+package="io.flutter.plugins.sharedpreferences" found in source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.7\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.sharedpreferences" from the source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\shared_preferences_android-2.4.7\android\src\main\AndroidManifest.xml.
+
+> Task :cloud_firestore:processDebugManifest
+package="io.flutter.plugins.firebase.firestore" found in source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-6.1.1\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.firebase.firestore" from the source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\cloud_firestore-6.1.1\android\src\main\AndroidManifest.xml.
+
+> Task :firebase_core:processDebugManifest
+package="io.flutter.plugins.firebase.core" found in source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-4.3.0\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.firebase.core" from the source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-4.3.0\android\src\main\AndroidManifest.xml.
+
+> Task :firebase_auth:processDebugManifest
+package="io.flutter.plugins.firebase.auth" found in source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-6.1.3\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.firebase.auth" from the source AndroidManifest.xml: C:\Users\Usuario\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-6.1.3\android\src\main\AndroidManifest.xml.
+
+> Task :cloud_firestore:compileDebugLibraryResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :firebase_auth:compileDebugLibraryResources
+> Task :cloud_firestore:parseDebugLocalResources
+> Task :firebase_auth:parseDebugLocalResources
+> Task :firebase_core:compileDebugLibraryResources
+> Task :firebase_core:parseDebugLocalResources
+> Task :firebase_auth:generateDebugRFile
+> Task :cloud_firestore:generateDebugRFile
+> Task :shared_preferences_android:compileDebugLibraryResources
+> Task :firebase_core:generateDebugRFile
+> Task :shared_preferences_android:parseDebugLocalResources
+> Task :cloud_firestore:generateDebugBuildConfig
+> Task :shared_preferences_android:generateDebugRFile
+> Task :cloud_firestore:javaPreCompileDebug
+> Task :firebase_core:generateDebugBuildConfig
+> Task :firebase_core:javaPreCompileDebug
+> Task :firebase_auth:generateDebugBuildConfig
+> Task :firebase_core:compileDebugJavaWithJavac
+> Task :firebase_auth:javaPreCompileDebug
+> Task :firebase_core:bundleLibCompileToJarDebug
+> Task :cloud_firestore:compileDebugJavaWithJavac
+> Task :cloud_firestore:bundleLibCompileToJarDebug
+
+> Task :firebase_auth:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :app:processDebugManifestForPackage
+> Task :firebase_auth:bundleLibCompileToJarDebug
+> Task :shared_preferences_android:javaPreCompileDebug
+> Task :app:javaPreCompileDebug
+> Task :cloud_firestore:processDebugJavaRes NO-SOURCE
+> Task :firebase_auth:processDebugJavaRes NO-SOURCE
+> Task :firebase_core:processDebugJavaRes NO-SOURCE
+> Task :app:compressDebugAssets
+> Task :app:processDebugResources
+> Task :app:checkDebugDuplicateClasses
+> Task :firebase_core:bundleLibRuntimeToJarDebug
+> Task :app:mergeDebugJniLibFolders
+> Task :cloud_firestore:bundleLibRuntimeToJarDebug
+> Task :firebase_auth:bundleLibRuntimeToJarDebug
+> Task :cloud_firestore:mergeDebugJniLibFolders
+> Task :cloud_firestore:mergeDebugNativeLibs NO-SOURCE
+> Task :cloud_firestore:copyDebugJniLibsProjectOnly
+> Task :firebase_auth:mergeDebugJniLibFolders
+> Task :firebase_auth:mergeDebugNativeLibs NO-SOURCE
+> Task :firebase_auth:copyDebugJniLibsProjectOnly
+> Task :firebase_core:mergeDebugJniLibFolders
+> Task :firebase_core:mergeDebugNativeLibs NO-SOURCE
+> Task :firebase_core:copyDebugJniLibsProjectOnly
+> Task :shared_preferences_android:mergeDebugJniLibFolders
+> Task :shared_preferences_android:mergeDebugNativeLibs NO-SOURCE
+> Task :shared_preferences_android:copyDebugJniLibsProjectOnly
+> Task :app:desugarDebugFileDependencies
+> Task :app:validateSigningDebug
+
+> Task :shared_preferences_android:compileDebugKotlin
+w: file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.7/android/src/main/kotlin/io/flutter/plugins/sharedpreferences/SharedPreferencesPlugin.kt:445:52 Unnecessary non-null assertion (!!) on a non-null receiver of type String
+
+> Task :app:mergeExtDexDebug
+WARNING: D8: Unexpected error during rewriting of Kotlin metadata for class 'com.google.firebase.auth.AuthKt':
+com.android.tools.r8.internal.L10: Should never be called
+	at com.android.tools.r8.internal.tA.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:3)
+	at com.android.tools.r8.internal.pA.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:33)
+	at com.android.tools.r8.internal.pA.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:32)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:28)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:39)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:19)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:131)
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:82)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:323)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(AbstractListeningExecutorService.java:69)
+	at com.google.common.util.concurrent.AbstractListeningExecutorService.submit(AbstractListeningExecutorService.java:36)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:18)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:11)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:38)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:31)
+	at com.android.tools.r8.utils.f3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:29)
+	at com.android.tools.r8.internal.pA.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:11)
+	at com.android.tools.r8.D8.b(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:20)
+	at com.android.tools.r8.utils.A3.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:45)
+	at com.android.tools.r8.D8.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:89)
+	at com.android.tools.r8.D8.d(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:129)
+	at com.android.tools.r8.D8.b(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:1)
+	at com.android.tools.r8.utils.S0.a(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:28)
+	at com.android.tools.r8.utils.S0.b(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:2)
+	at com.android.tools.r8.D8.run(R8_8.2.47_115170b0e238ab4c8fd3abe4aa31d20c98f8a77f61775e861794cc2d75fbdf13:11)
+	at com.android.builder.dexing.D8DexArchiveBuilder.convert(D8DexArchiveBuilder.java:125)
+	at com.android.build.gradle.internal.dependency.BaseDexingTransform.process(DexingTransform.kt:281)
+	at com.android.build.gradle.internal.dependency.BaseDexingTransform.processNonIncrementally(DexingTransform.kt:227)
+	at com.android.build.gradle.internal.dependency.BaseDexingTransform.transform(DexingTransform.kt:147)
+	at org.gradle.api.internal.artifacts.transform.DefaultTransform.transform(DefaultTransform.java:279)
+	at org.gradle.api.internal.artifacts.transform.AbstractTransformExecution$2.call(AbstractTransformExecution.java:138)
+	at org.gradle.api.internal.artifacts.transform.AbstractTransformExecution$2.call(AbstractTransformExecution.java:132)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.artifacts.transform.AbstractTransformExecution.executeWithinTransformerListener(AbstractTransformExecution.java:132)
+	at org.gradle.api.internal.artifacts.transform.AbstractTransformExecution.execute(AbstractTransformExecution.java:125)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:50)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:28)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.executeDelegateBroadcastingChanges(CaptureStateAfterExecutionStep.java:100)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:72)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:50)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:179)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:70)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:68)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:25)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:36)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:22)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:91)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:55)
+	at java.base/java.util.Optional.orElseGet(Unknown Source)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:37)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:37)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:108)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:55)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:71)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.executeWithNonEmptySources(SkipEmptyWorkStep.java:177)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:81)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:53)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:32)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:21)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$0(ExecuteWorkBuildOperationFiringStep.java:52)
+	at org.gradle.internal.execution.steps.BuildOperationStep$1.call(BuildOperationStep.java:37)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.BuildOperationStep.operation(BuildOperationStep.java:34)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$1(ExecuteWorkBuildOperationFiringStep.java:50)
+	at java.base/java.util.Optional.map(Unknown Source)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:50)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:38)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.lambda$execute$0(AssignWorkspaceStep.java:32)
+	at org.gradle.internal.execution.workspace.impl.DefaultImmutableWorkspaceProvider.lambda$withWorkspace$3(DefaultImmutableWorkspaceProvider.java:140)
+	at org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess.withFileLock(LockOnDemandCrossProcessCacheAccess.java:90)
+	at org.gradle.cache.internal.DefaultCacheCoordinator.withFileLock(DefaultCacheCoordinator.java:219)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.withFileLock(DefaultPersistentDirectoryStore.java:179)
+	at org.gradle.cache.internal.DefaultCacheFactory$ReferenceTrackingCache.withFileLock(DefaultCacheFactory.java:214)
+	at org.gradle.internal.execution.workspace.impl.DefaultImmutableWorkspaceProvider.withWorkspace(DefaultImmutableWorkspaceProvider.java:137)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:30)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:21)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:37)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.lambda$executeDeferred$0(IdentityCacheStep.java:49)
+	at org.gradle.cache.Cache.lambda$get$0(Cache.java:31)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.gradle.cache.ManualEvictionInMemoryCache.get(ManualEvictionInMemoryCache.java:30)
+	at org.gradle.cache.internal.DefaultCrossBuildInMemoryCacheFactory$CrossBuildCacheRetainingDataFromPreviousBuild.get(DefaultCrossBuildInMemoryCacheFactory.java:255)
+	at org.gradle.cache.Cache.get(Cache.java:31)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.lambda$executeDeferred$1(IdentityCacheStep.java:47)
+	at org.gradle.internal.Deferrable$3.completeAndGet(Deferrable.java:117)
+	at org.gradle.internal.Deferrable$1.completeAndGet(Deferrable.java:59)
+	at org.gradle.internal.Deferrable$1.completeAndGet(Deferrable.java:59)
+	at org.gradle.api.internal.artifacts.transform.TransformingAsyncArtifactListener$TransformedArtifact.finalizeValue(TransformingAsyncArtifactListener.java:209)
+	at org.gradle.api.internal.artifacts.transform.TransformingAsyncArtifactListener$TransformedArtifact.run(TransformingAsyncArtifactListener.java:147)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor$QueueWorker.execute(DefaultBuildOperationExecutor.java:238)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.runOperation(DefaultBuildOperationQueue.java:272)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.doRunBatch(DefaultBuildOperationQueue.java:253)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.lambda$runBatch$0(DefaultBuildOperationQueue.java:238)
+	at org.gradle.internal.resources.AbstractResourceLockRegistry.whileDisallowingLockChanges(AbstractResourceLockRegistry.java:50)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.whileDisallowingProjectLockChanges(DefaultWorkerLeaseService.java:236)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.lambda$runBatch$1(DefaultBuildOperationQueue.java:238)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:264)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:128)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.runBatch(DefaultBuildOperationQueue.java:224)
+	at org.gradle.internal.operations.DefaultBuildOperationQueue$WorkerRunnable.run(DefaultBuildOperationQueue.java:192)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+
+> Task :shared_preferences_android:compileDebugJavaWithJavac
+> Task :shared_preferences_android:bundleLibCompileToJarDebug
+> Task :shared_preferences_android:processDebugJavaRes
+> Task :shared_preferences_android:bundleLibRuntimeToJarDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :cloud_firestore:stripDebugDebugSymbols NO-SOURCE
+> Task :cloud_firestore:copyDebugJniLibsProjectAndLocalJars
+> Task :app:mergeLibDexDebug
+> Task :app:compileDebugKotlin
+> Task :app:mergeDebugNativeLibs
+> Task :cloud_firestore:extractDebugAnnotations
+
+> Task :app:compileDebugJavaWithJavac
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+3 warnings
+
+> Task :app:processDebugJavaRes
+> Task :app:dexBuilderDebug
+> Task :cloud_firestore:extractDeepLinksForAarDebug
+> Task :cloud_firestore:mergeDebugGeneratedProguardFiles
+> Task :cloud_firestore:mergeDebugConsumerProguardFiles
+> Task :cloud_firestore:prepareDebugArtProfile
+> Task :cloud_firestore:prepareLintJarForPublish
+> Task :firebase_auth:stripDebugDebugSymbols NO-SOURCE
+> Task :app:mergeProjectDexDebug
+> Task :firebase_auth:copyDebugJniLibsProjectAndLocalJars
+> Task :cloud_firestore:mergeDebugJavaResource
+> Task :firebase_auth:extractDebugAnnotations
+> Task :cloud_firestore:syncDebugLibJars
+> Task :cloud_firestore:bundleDebugAar
+> Task :cloud_firestore:assembleDebug
+> Task :firebase_auth:extractDeepLinksForAarDebug
+> Task :firebase_auth:mergeDebugGeneratedProguardFiles
+> Task :firebase_auth:mergeDebugConsumerProguardFiles
+> Task :firebase_auth:prepareDebugArtProfile
+> Task :firebase_auth:prepareLintJarForPublish
+> Task :firebase_core:stripDebugDebugSymbols NO-SOURCE
+> Task :firebase_auth:mergeDebugJavaResource
+> Task :firebase_core:copyDebugJniLibsProjectAndLocalJars
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libVkLayer_khronos_validation.so, libdatastore_shared_counter.so, libflutter.so.
+
+> Task :firebase_auth:syncDebugLibJars
+> Task :firebase_auth:bundleDebugAar
+> Task :firebase_auth:assembleDebug
+> Task :firebase_core:extractDebugAnnotations
+> Task :firebase_core:extractDeepLinksForAarDebug
+> Task :firebase_core:mergeDebugGeneratedProguardFiles
+> Task :firebase_core:mergeDebugConsumerProguardFiles
+> Task :firebase_core:prepareDebugArtProfile
+> Task :firebase_core:prepareLintJarForPublish
+> Task :shared_preferences_android:stripDebugDebugSymbols NO-SOURCE
+> Task :firebase_core:mergeDebugJavaResource
+> Task :shared_preferences_android:copyDebugJniLibsProjectAndLocalJars
+> Task :shared_preferences_android:extractDebugAnnotations
+> Task :firebase_core:syncDebugLibJars
+> Task :firebase_core:bundleDebugAar
+> Task :firebase_core:assembleDebug
+> Task :shared_preferences_android:extractDeepLinksForAarDebug
+> Task :shared_preferences_android:mergeDebugGeneratedProguardFiles
+> Task :shared_preferences_android:mergeDebugConsumerProguardFiles
+> Task :shared_preferences_android:prepareDebugArtProfile
+> Task :shared_preferences_android:prepareLintJarForPublish
+> Task :shared_preferences_android:mergeDebugJavaResource
+> Task :shared_preferences_android:syncDebugLibJars
+> Task :shared_preferences_android:bundleDebugAar
+> Task :shared_preferences_android:assembleDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 2m 12s
+153 actionable tasks: 148 executed, 5 up-to-date

@@ -1,0 +1,73 @@
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Configure project :shared_preferences_android
+Your project is configured with Android NDK 23.1.7779620, but the following plugin(s) depend on a different Android NDK version:
+- cloud_firestore requires Android NDK 25.1.8937393
+- firebase_auth requires Android NDK 25.1.8937393
+- firebase_core requires Android NDK 25.1.8937393
+- shared_preferences_android requires Android NDK 25.1.8937393
+Fix this issue by using the highest Android NDK version (they are backward compatible).
+Add the following to C:\Users\Usuario\.gemini\antigravity\scratch\ECOCONDOR\ecocondor_app\android\app\build.gradle:
+
+    android {
+        ndkVersion = "25.1.8937393"
+        ...
+    }
+
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+
+> Task :app:compileFlutterBuildDebug
+Error: Couldn't resolve the package 'google_fonts' in 'package:google_fonts/google_fonts.dart'.
+lib/main.dart:4:8: Error: Not found: 'package:google_fonts/google_fonts.dart'
+import 'package:google_fonts/google_fonts.dart';
+       ^
+lib/main.dart:35:22: Error: The getter 'GoogleFonts' isn't defined for the class 'EcocondorApp'.
+ - 'EcocondorApp' is from 'package:ecocondor_app/main.dart' ('lib/main.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'GoogleFonts'.
+          textTheme: GoogleFonts.poppinsTextTheme(),
+                     ^^^^^^^^^^^
+lib/main.dart:40:29: Error: The getter 'GoogleFonts' isn't defined for the class 'EcocondorApp'.
+ - 'EcocondorApp' is from 'package:ecocondor_app/main.dart' ('lib/main.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'GoogleFonts'.
+            titleTextStyle: GoogleFonts.poppins(
+                            ^^^^^^^^^^^
+Unhandled exception:
+FileSystemException(uri=org-dartlang-untranslatable-uri:package%3Agoogle_fonts%2Fgoogle_fonts.dart; message=StandardFileSystem only supports file:* and data:* URIs)
+#0      StandardFileSystem.entityForUri (package:front_end/src/api_prototype/standard_file_system.dart:35)
+#1      asFileUri (package:vm/kernel_front_end.dart:792)
+#2      writeDepfile (package:vm/kernel_front_end.dart:932)
+<asynchronous suspension>
+#3      FrontendCompiler.compile (package:frontend_server/frontend_server.dart:704)
+<asynchronous suspension>
+#4      starter (package:frontend_server/starter.dart:109)
+<asynchronous suspension>
+#5      main (file:///C:/b/s/w/ir/x/w/sdk/pkg/frontend_server/bin/frontend_server_starter.dart:13)
+<asynchronous suspension>
+
+Target kernel_snapshot_program failed: Exception
+
+
+> Task :app:compileFlutterBuildDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\flutter\bin\flutter.bat'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 9s
+5 actionable tasks: 1 executed, 4 up-to-date

@@ -1,0 +1,932 @@
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Configure project :shared_preferences_android
+Your project is configured with Android NDK 23.1.7779620, but the following plugin(s) depend on a different Android NDK version:
+- cloud_firestore requires Android NDK 25.1.8937393
+- firebase_auth requires Android NDK 25.1.8937393
+- firebase_core requires Android NDK 25.1.8937393
+- shared_preferences_android requires Android NDK 25.1.8937393
+Fix this issue by using the highest Android NDK version (they are backward compatible).
+Add the following to C:\Users\Usuario\.gemini\antigravity\scratch\ECOCONDOR\ecocondor_app\android\app\build.gradle:
+
+    android {
+        ndkVersion = "25.1.8937393"
+        ...
+    }
+
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+
+> Task :app:compileFlutterBuildDebug
+lib/screens/home_screen.dart:18:42: Error: Non-optional parameters can't have a default value.
+Try removing the default value or making the parameter optional.
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                         ^
+lib/screens/home_screen.dart:19:33: Error: Non-optional parameters can't have a default value.
+Try removing the default value or making the parameter optional.
+                        children: [
+                                ^
+lib/screens/home_screen.dart:53:24: Error: Expected '{' before this.
+                      ),
+                       ^
+lib/screens/home_screen.dart:53:24: Error: Expected a declaration, but got ','.
+                      ),
+                       ^
+lib/screens/home_screen.dart:496:7: Error: '_MaterialCard' is already declared in this scope.
+class _MaterialCard extends StatelessWidget {
+      ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:57:7: Context: Previous declaration of '_MaterialCard'.
+class _MaterialCard extends StatelessWidget {
+      ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:57:29: Error: Type 'StatelessWidget' not found.
+class _MaterialCard extends StatelessWidget {
+                            ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:58:9: Error: Type 'IconData' not found.
+  final IconData icon;
+        ^^^^^^^^
+lib/screens/home_screen.dart:60:9: Error: Type 'Color' not found.
+  final Color color;
+        ^^^^^
+lib/screens/home_screen.dart:61:9: Error: Type 'VoidCallback' not found.
+  final VoidCallback onTap;
+        ^^^^^^^^^^^^
+lib/screens/home_screen.dart:71:3: Error: Type 'Widget' not found.
+  Widget build(BuildContext context) {
+  ^^^^^^
+lib/screens/home_screen.dart:71:16: Error: Type 'BuildContext' not found.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:100:26: Error: Type 'StatefulWidget' not found.
+class HomeScreen extends StatefulWidget {
+                         ^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:104:3: Error: Type 'State' not found.
+  State<HomeScreen> createState() => _HomeScreenState();
+  ^^^^^
+lib/screens/home_screen.dart:107:32: Error: Type 'State' not found.
+class _HomeScreenState extends State<HomeScreen> {
+                               ^^^^^
+lib/screens/home_screen.dart:133:3: Error: Type 'Widget' not found.
+  Widget build(BuildContext context) {
+  ^^^^^^
+lib/screens/home_screen.dart:133:16: Error: Type 'BuildContext' not found.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:421:35: Error: Type 'BuildContext' not found.
+  Future<void> _navigateToRecycle(BuildContext context, String materialId) async {
+                                  ^^^^^^^^^^^^
+lib/screens/home_screen.dart:432:27: Error: Type 'StatelessWidget' not found.
+class _ActionCard extends StatelessWidget {
+                          ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:433:9: Error: Type 'IconData' not found.
+  final IconData icon;
+        ^^^^^^^^
+lib/screens/home_screen.dart:436:9: Error: Type 'Color' not found.
+  final Color color;
+        ^^^^^
+lib/screens/home_screen.dart:437:9: Error: Type 'VoidCallback' not found.
+  final VoidCallback onTap;
+        ^^^^^^^^^^^^
+lib/screens/home_screen.dart:448:3: Error: Type 'Widget' not found.
+  Widget build(BuildContext context) {
+  ^^^^^^
+lib/screens/home_screen.dart:448:16: Error: Type 'BuildContext' not found.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:496:29: Error: Type 'StatelessWidget' not found.
+class _MaterialCard extends StatelessWidget {
+                            ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:497:9: Error: Type 'IconData' not found.
+  final IconData icon;
+        ^^^^^^^^
+lib/screens/home_screen.dart:499:9: Error: Type 'Color' not found.
+  final Color color;
+        ^^^^^
+lib/screens/home_screen.dart:500:9: Error: Type 'VoidCallback' not found.
+  final VoidCallback onTap;
+        ^^^^^^^^^^^^
+lib/screens/home_screen.dart:510:3: Error: Type 'Widget' not found.
+  Widget build(BuildContext context) {
+  ^^^^^^
+lib/screens/home_screen.dart:510:16: Error: Type 'BuildContext' not found.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:101:9: Error: The superclass, 'StatefulWidget', has no unnamed constructor that takes no arguments.
+  const HomeScreen({super.key});
+        ^^^^^^^^^^
+lib/main.dart:77:28: Error: A value of type 'HomeScreen' can't be returned from a function with return type 'Widget'.
+ - 'HomeScreen' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+ - 'Widget' is from 'package:flutter/src/widgets/framework.dart' ('/C:/flutter/packages/flutter/lib/src/widgets/framework.dart').
+              return const HomeScreen();
+                           ^
+lib/screens/home_screen.dart:8:7: Error: Method not found: 'MaterialPageRoute'.
+      MaterialPageRoute(
+      ^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:7:7: Error: Undefined name 'context'.
+      context,
+      ^^^^^^^
+lib/screens/home_screen.dart:6:11: Error: Undefined name 'Navigator'.
+    await Navigator.push(
+          ^^^^^^^^^
+lib/screens/home_screen.dart:12:5: Error: Method not found: '_loadUserData'.
+    _loadUserData();
+    ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:18:44: Error: Undefined name 'MainAxisAlignment'.
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                           ^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:21:29: Error: Undefined name 'Icons'.
+                            Icons.stars_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:23:36: Error: Undefined name 'Colors'.
+                            color: Colors.white70,
+                                   ^^^^^^
+lib/screens/home_screen.dart:20:33: Error: Couldn't find constructor 'Icon'.
+                          const Icon(
+                                ^^^^
+lib/screens/home_screen.dart:28:46: Error: Couldn't find constructor 'EdgeInsets.symmetric'.
+                              padding: const EdgeInsets.symmetric(
+                                             ^^^^^^^^^
+lib/screens/home_screen.dart:33:40: Error: Undefined name 'Colors'.
+                                color: Colors.white24,
+                                       ^^^^^^
+lib/screens/home_screen.dart:34:47: Error: Undefined name 'BorderRadius'.
+                                borderRadius: BorderRadius.circular(20),
+                                              ^^^^^^^^^^^^
+lib/screens/home_screen.dart:34:60: Error: Method invocation is not a constant expression.
+                                borderRadius: BorderRadius.circular(20),
+                                                           ^^^^^^^^
+lib/screens/home_screen.dart:32:43: Error: Method not found: 'BoxDecoration'.
+                              decoration: BoxDecoration(
+                                          ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:38:46: Error: Undefined name 'Icons'.
+                                  const Icon(Icons.history, size: 16, color: Colors.white),
+                                             ^^^^^
+lib/screens/home_screen.dart:38:78: Error: Undefined name 'Colors'.
+                                  const Icon(Icons.history, size: 16, color: Colors.white),
+                                                                             ^^^^^^
+lib/screens/home_screen.dart:38:41: Error: Couldn't find constructor 'Icon'.
+                                  const Icon(Icons.history, size: 16, color: Colors.white),
+                                        ^^^^
+lib/screens/home_screen.dart:39:41: Error: Couldn't find constructor 'SizedBox'.
+                                  const SizedBox(width: 4),
+                                        ^^^^^^^^
+lib/screens/home_screen.dart:41:39: Error: Undefined name '_totalRecycled'.
+                                    '$_totalRecycled reciclajes',
+                                      ^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:43:46: Error: Undefined name 'Colors'.
+                                      color: Colors.white,
+                                             ^^^^^^
+lib/screens/home_screen.dart:45:51: Error: Undefined name 'FontWeight'.
+                                      fontWeight: FontWeight.w500,
+                                                  ^^^^^^^^^^
+lib/screens/home_screen.dart:42:50: Error: Couldn't find constructor 'TextStyle'.
+                                    style: const TextStyle(
+                                                 ^^^^^^^^^
+lib/screens/home_screen.dart:40:35: Error: Method not found: 'Text'.
+                                  Text(
+                                  ^^^^
+lib/screens/home_screen.dart:37:43: Error: Constant expression expected.
+Try inserting 'const'.
+                                children: [
+                                          ^
+lib/screens/home_screen.dart:36:38: Error: Method invocation is not a constant expression.
+                              child: Row(
+                                     ^^^
+lib/screens/home_screen.dart:27:36: Error: Method not found: 'Container'.
+                            child: Container(
+                                   ^^^^^^^^^
+lib/screens/home_screen.dart:25:27: Error: Method not found: 'GestureDetector'.
+                          GestureDetector(
+                          ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:19:35: Error: Constant expression expected.
+Try inserting 'const'.
+                        children: [
+                                  ^
+lib/screens/home_screen.dart:58:9: Error: 'IconData' isn't a type.
+  final IconData icon;
+        ^^^^^^^^
+lib/screens/home_screen.dart:60:9: Error: 'Color' isn't a type.
+  final Color color;
+        ^^^^^
+lib/screens/home_screen.dart:61:9: Error: 'VoidCallback' isn't a type.
+  final VoidCallback onTap;
+        ^^^^^^^^^^^^
+lib/screens/home_screen.dart:71:16: Error: 'BuildContext' isn't a type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:74:21: Error: Couldn't find constructor 'EdgeInsets.only'.
+      margin: const EdgeInsets.only(right: 12),
+                    ^^^^
+lib/screens/home_screen.dart:80:30: Error: Couldn't find constructor 'EdgeInsets.all'.
+              padding: const EdgeInsets.all(12),
+                             ^^^
+lib/screens/home_screen.dart:87:19: Error: Couldn't find constructor 'SizedBox'.
+            const SizedBox(height: 8),
+                  ^^^^^^^^
+lib/screens/home_screen.dart:90:64: Error: Undefined name 'FontWeight'.
+              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                                                               ^^^^^^^^^^
+lib/screens/home_screen.dart:90:28: Error: Couldn't find constructor 'TextStyle'.
+              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                           ^^^^^^^^^
+lib/screens/home_screen.dart:72:12: Error: The method 'Container' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Container'.
+    return Container(
+           ^^^^^^^^^
+lib/screens/home_screen.dart:75:14: Error: The method 'GestureDetector' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'GestureDetector'.
+      child: GestureDetector(
+             ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:77:16: Error: The method 'Column' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Column'.
+        child: Column(
+               ^^^^^^
+lib/screens/home_screen.dart:79:13: Error: The method 'Container' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Container'.
+            Container(
+            ^^^^^^^^^
+lib/screens/home_screen.dart:81:27: Error: The method 'BoxDecoration' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'BoxDecoration'.
+              decoration: BoxDecoration(
+                          ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:83:31: Error: The getter 'BorderRadius' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+                borderRadius: BorderRadius.circular(16),
+                              ^^^^^^^^^^^^
+lib/screens/home_screen.dart:85:22: Error: The method 'Icon' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Icon'.
+              child: Icon(icon, color: color, size: 24),
+                     ^^^^
+lib/screens/home_screen.dart:88:13: Error: The method 'Text' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+            Text(
+            ^^^^
+lib/screens/home_screen.dart:91:26: Error: The getter 'TextAlign' isn't defined for the class '_MaterialCard'.
+ - '_MaterialCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'TextAlign'.
+              textAlign: TextAlign.center,
+                         ^^^^^^^^^
+lib/screens/home_screen.dart:114:11: Error: Superclass has no method named 'initState'.
+    super.initState();
+          ^^^^^^^^^
+lib/screens/home_screen.dart:119:23: Error: The method 'FirestoreService' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'FirestoreService'.
+    final firestore = FirestoreService();
+                      ^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:123:9: Error: The getter 'mounted' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'mounted'.
+    if (mounted) {
+        ^^^^^^^
+lib/screens/home_screen.dart:124:7: Error: The method 'setState' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'setState'.
+      setState(() {
+      ^^^^^^^^
+lib/screens/home_screen.dart:133:16: Error: 'BuildContext' isn't a type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:134:32: Error: 'AuthService' isn't a type.
+    final auth = context.watch<AuthService>();
+                               ^^^^^^^^^^^
+lib/screens/home_screen.dart:147:24: Error: Undefined name 'BoxShape'.
+                shape: BoxShape.circle,
+                       ^^^^^^^^
+lib/screens/home_screen.dart:146:33: Error: Couldn't find constructor 'BoxDecoration'.
+              decoration: const BoxDecoration(
+                                ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:156:19: Error: Couldn't find constructor 'SizedBox'.
+            const SizedBox(width: 8),
+                  ^^^^^^^^
+lib/screens/home_screen.dart:140:19: Error: Too few positional arguments: 2 required, 0 given.
+        title: Row(
+                  ^
+lib/screens/home_screen.dart:17:23: Context: Found this candidate, but the arguments don't match.
+                      Row(
+                      ^^^
+lib/screens/home_screen.dart:178:26: Error: Couldn't find constructor 'AlwaysScrollableScrollPhysics'.
+          physics: const AlwaysScrollableScrollPhysics(),
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:179:26: Error: Couldn't find constructor 'EdgeInsets.all'.
+          padding: const EdgeInsets.all(20),
+                         ^^^
+lib/screens/home_screen.dart:193:25: Error: Couldn't find constructor 'SizedBox'.
+                  const SizedBox(width: 12),
+                        ^^^^^^^^
+lib/screens/home_screen.dart:184:18: Error: Too few positional arguments: 2 required, 0 given.
+              Row(
+                 ^
+lib/screens/home_screen.dart:17:23: Context: Found this candidate, but the arguments don't match.
+                      Row(
+                      ^^^
+lib/screens/home_screen.dart:212:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 24),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:221:34: Error: Couldn't find constructor 'EdgeInsets.all'.
+                  padding: const EdgeInsets.all(24),
+                                 ^^^
+lib/screens/home_screen.dart:229:31: Error: Couldn't find constructor 'Color'.
+                        const Color(0xFF1565C0), // Secondary Blue
+                              ^^^^^
+lib/screens/home_screen.dart:236:39: Error: Couldn't find constructor 'Offset'.
+                        offset: const Offset(0, 10),
+                                      ^^^^^^
+lib/screens/home_screen.dart:246:29: Error: Undefined name 'Icons'.
+                            Icons.stars_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:248:36: Error: Undefined name 'Colors'.
+                            color: Colors.white70,
+                                   ^^^^^^
+lib/screens/home_screen.dart:245:33: Error: Couldn't find constructor 'Icon'.
+                          const Icon(
+                                ^^^^
+lib/screens/home_screen.dart:251:44: Error: Couldn't find constructor 'EdgeInsets.symmetric'.
+                            padding: const EdgeInsets.symmetric(
+                                           ^^^^^^^^^
+lib/screens/home_screen.dart:261:44: Error: Undefined name 'Icons'.
+                                const Icon(Icons.history, size: 16, color: Colors.white),
+                                           ^^^^^
+lib/screens/home_screen.dart:261:76: Error: Undefined name 'Colors'.
+                                const Icon(Icons.history, size: 16, color: Colors.white),
+                                                                           ^^^^^^
+lib/screens/home_screen.dart:261:39: Error: Couldn't find constructor 'Icon'.
+                                const Icon(Icons.history, size: 16, color: Colors.white),
+                                      ^^^^
+lib/screens/home_screen.dart:262:39: Error: Couldn't find constructor 'SizedBox'.
+                                const SizedBox(width: 4),
+                                      ^^^^^^^^
+lib/screens/home_screen.dart:266:44: Error: Undefined name 'Colors'.
+                                    color: Colors.white,
+                                           ^^^^^^
+lib/screens/home_screen.dart:268:49: Error: Undefined name 'FontWeight'.
+                                    fontWeight: FontWeight.w500,
+                                                ^^^^^^^^^^
+lib/screens/home_screen.dart:265:48: Error: Couldn't find constructor 'TextStyle'.
+                                  style: const TextStyle(
+                                               ^^^^^^^^^
+lib/screens/home_screen.dart:259:39: Error: Too few positional arguments: 2 required, 0 given.
+                            child: Row(
+                                      ^
+lib/screens/home_screen.dart:17:23: Context: Found this candidate, but the arguments don't match.
+                      Row(
+                      ^^^
+lib/screens/home_screen.dart:242:26: Error: Too few positional arguments: 2 required, 0 given.
+                      Row(
+                         ^
+lib/screens/home_screen.dart:17:23: Context: Found this candidate, but the arguments don't match.
+                      Row(
+                      ^^^
+lib/screens/home_screen.dart:276:29: Error: Couldn't find constructor 'SizedBox'.
+                      const SizedBox(height: 24),
+                            ^^^^^^^^
+lib/screens/home_screen.dart:279:71: Error: Undefined name 'Colors'.
+                              child: CircularProgressIndicator(color: Colors.white),
+                                                                      ^^^^^^
+lib/screens/home_screen.dart:279:38: Error: Method not found: 'CircularProgressIndicator'.
+                              child: CircularProgressIndicator(color: Colors.white),
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:278:35: Error: Couldn't find constructor 'Center'.
+                          ? const Center(
+                                  ^^^^^^
+lib/screens/home_screen.dart:287:49: Error: Undefined name 'FontWeight'.
+                                    fontWeight: FontWeight.bold,
+                                                ^^^^^^^^^^
+lib/screens/home_screen.dart:288:44: Error: Undefined name 'Colors'.
+                                    color: Colors.white,
+                                           ^^^^^^
+lib/screens/home_screen.dart:285:48: Error: Couldn't find constructor 'TextStyle'.
+                                  style: const TextStyle(
+                                               ^^^^^^^^^
+lib/screens/home_screen.dart:295:44: Error: Undefined name 'Colors'.
+                                    color: Colors.white70,
+                                           ^^^^^^
+lib/screens/home_screen.dart:298:49: Error: Undefined name 'FontWeight'.
+                                    fontWeight: FontWeight.w600,
+                                                ^^^^^^^^^^
+lib/screens/home_screen.dart:294:42: Error: Method not found: 'TextStyle'.
+                                  style: TextStyle(
+                                         ^^^^^^^^^
+lib/screens/home_screen.dart:292:39: Error: Couldn't find constructor 'Text'.
+                                const Text(
+                                      ^^^^
+lib/screens/home_screen.dart:303:29: Error: Couldn't find constructor 'SizedBox'.
+                      const SizedBox(height: 8),
+                            ^^^^^^^^
+lib/screens/home_screen.dart:309:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 32),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:318:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 16),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:327:36: Error: Couldn't find constructor 'Color'.
+                      color: const Color(0xFF4CAF50),
+                                   ^^^^^
+lib/screens/home_screen.dart:332:51: Error: Couldn't find constructor 'RecyclingScreen'.
+                            builder: (_) => const RecyclingScreen(),
+                                                  ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:339:25: Error: Couldn't find constructor 'SizedBox'.
+                  const SizedBox(width: 16),
+                        ^^^^^^^^
+lib/screens/home_screen.dart:345:36: Error: Couldn't find constructor 'Color'.
+                      color: const Color(0xFFFF9800),
+                                   ^^^^^
+lib/screens/home_screen.dart:350:51: Error: Couldn't find constructor 'RewardsScreen'.
+                            builder: (_) => const RewardsScreen(),
+                                                  ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:320:18: Error: Too few positional arguments: 2 required, 0 given.
+              Row(
+                 ^
+lib/screens/home_screen.dart:17:23: Context: Found this candidate, but the arguments don't match.
+                      Row(
+                      ^^^
+lib/screens/home_screen.dart:359:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 32),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:368:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 16),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:375:21: Error: Can't use '_MaterialCard' because it is declared more than once.
+                    _MaterialCard(
+                    ^
+lib/screens/home_screen.dart:381:21: Error: Can't use '_MaterialCard' because it is declared more than once.
+                    _MaterialCard(
+                    ^
+lib/screens/home_screen.dart:387:21: Error: Can't use '_MaterialCard' because it is declared more than once.
+                    _MaterialCard(
+                    ^
+lib/screens/home_screen.dart:393:21: Error: Can't use '_MaterialCard' because it is declared more than once.
+                    _MaterialCard(
+                    ^
+lib/screens/home_screen.dart:399:21: Error: Can't use '_MaterialCard' because it is declared more than once.
+                    _MaterialCard(
+                    ^
+lib/screens/home_screen.dart:405:21: Error: Can't use '_MaterialCard' because it is declared more than once.
+                    _MaterialCard(
+                    ^
+lib/screens/home_screen.dart:135:25: Error: The getter 'Theme' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Theme'.
+    final colorScheme = Theme.of(context).colorScheme;
+                        ^^^^^
+lib/screens/home_screen.dart:137:12: Error: The method 'Scaffold' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Scaffold'.
+    return Scaffold(
+           ^^^^^^^^
+lib/screens/home_screen.dart:139:15: Error: The method 'AppBar' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'AppBar'.
+      appBar: AppBar(
+              ^^^^^^
+lib/screens/home_screen.dart:168:11: Error: The method 'IconButton' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'IconButton'.
+          IconButton(
+          ^^^^^^^^^^
+lib/screens/home_screen.dart:169:19: Error: The method 'Icon' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Icon'.
+            icon: Icon(Icons.logout_rounded, color: colorScheme.error),
+                  ^^^^
+lib/screens/home_screen.dart:169:24: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+            icon: Icon(Icons.logout_rounded, color: colorScheme.error),
+                       ^^^^^
+lib/screens/home_screen.dart:175:13: Error: The method 'RefreshIndicator' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'RefreshIndicator'.
+      body: RefreshIndicator(
+            ^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:177:16: Error: The method 'SingleChildScrollView' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SingleChildScrollView'.
+        child: SingleChildScrollView(
+               ^^^^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:180:18: Error: The method 'Column' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Column'.
+          child: Column(
+                 ^^^^^^
+lib/screens/home_screen.dart:181:33: Error: The getter 'CrossAxisAlignment' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'CrossAxisAlignment'.
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+                                ^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:215:15: Error: The method 'Card' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Card'.
+              Card(
+              ^^^^
+lib/screens/home_screen.dart:217:24: Error: The method 'RoundedRectangleBorder' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'RoundedRectangleBorder'.
+                shape: RoundedRectangleBorder(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:218:33: Error: The getter 'BorderRadius' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+                  borderRadius: BorderRadius.circular(24),
+                                ^^^^^^^^^^^^
+lib/screens/home_screen.dart:220:24: Error: The method 'Container' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Container'.
+                child: Container(
+                       ^^^^^^^^^
+lib/screens/home_screen.dart:222:31: Error: The method 'BoxDecoration' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'BoxDecoration'.
+                  decoration: BoxDecoration(
+                              ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:223:35: Error: The getter 'BorderRadius' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+                    borderRadius: BorderRadius.circular(24),
+                                  ^^^^^^^^^^^^
+lib/screens/home_screen.dart:224:31: Error: The method 'LinearGradient' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'LinearGradient'.
+                    gradient: LinearGradient(
+                              ^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:225:30: Error: The getter 'Alignment' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Alignment'.
+                      begin: Alignment.topLeft,
+                             ^^^^^^^^^
+lib/screens/home_screen.dart:226:28: Error: The getter 'Alignment' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Alignment'.
+                      end: Alignment.bottomRight,
+                           ^^^^^^^^^
+lib/screens/home_screen.dart:233:23: Error: The method 'BoxShadow' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'BoxShadow'.
+                      BoxShadow(
+                      ^^^^^^^^^
+lib/screens/home_screen.dart:240:26: Error: The method 'Column' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Column'.
+                  child: Column(
+                         ^^^^^^
+lib/screens/home_screen.dart:281:29: Error: The method 'Column' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Column'.
+                          : Column(
+                            ^^^^^^
+lib/screens/home_screen.dart:283:33: Error: The method 'Text' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+                                Text(
+                                ^^^^
+lib/screens/home_screen.dart:312:15: Error: The method 'Text' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+              Text(
+              ^^^^
+lib/screens/home_screen.dart:314:24: Error: The getter 'Theme' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Theme'.
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                       ^^^^^
+lib/screens/home_screen.dart:315:31: Error: The getter 'FontWeight' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'FontWeight'.
+                  fontWeight: FontWeight.bold,
+                              ^^^^^^^^^^
+lib/screens/home_screen.dart:362:15: Error: The method 'Text' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+              Text(
+              ^^^^
+lib/screens/home_screen.dart:364:24: Error: The getter 'Theme' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Theme'.
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                       ^^^^^
+lib/screens/home_screen.dart:365:31: Error: The getter 'FontWeight' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'FontWeight'.
+                  fontWeight: FontWeight.bold,
+                              ^^^^^^^^^^
+lib/screens/home_screen.dart:370:15: Error: The method 'SizedBox' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'SizedBox'.
+              SizedBox(
+              ^^^^^^^^
+lib/screens/home_screen.dart:372:24: Error: The method 'ListView' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'ListView'.
+                child: ListView(
+                       ^^^^^^^^
+lib/screens/home_screen.dart:373:36: Error: The getter 'Axis' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Axis'.
+                  scrollDirection: Axis.horizontal,
+                                   ^^^^
+lib/screens/home_screen.dart:376:29: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+                      icon: Icons.local_drink_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:378:30: Error: The getter 'Colors' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Colors'.
+                      color: Colors.blue,
+                             ^^^^^^
+lib/screens/home_screen.dart:382:29: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+                      icon: Icons.wine_bar_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:384:30: Error: The getter 'Colors' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Colors'.
+                      color: Colors.green,
+                             ^^^^^^
+lib/screens/home_screen.dart:388:29: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+                      icon: Icons.description_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:390:30: Error: The getter 'Colors' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Colors'.
+                      color: Colors.brown,
+                             ^^^^^^
+lib/screens/home_screen.dart:394:29: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+                      icon: Icons.settings_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:396:30: Error: The getter 'Colors' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Colors'.
+                      color: Colors.blueGrey,
+                             ^^^^^^
+lib/screens/home_screen.dart:400:29: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+                      icon: Icons.eco_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:402:30: Error: The getter 'Colors' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Colors'.
+                      color: Colors.orange,
+                             ^^^^^^
+lib/screens/home_screen.dart:406:29: Error: The getter 'Icons' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Icons'.
+                      icon: Icons.devices_rounded,
+                            ^^^^^
+lib/screens/home_screen.dart:408:30: Error: The getter 'Colors' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Colors'.
+                      color: Colors.purple,
+                             ^^^^^^
+lib/screens/home_screen.dart:421:35: Error: 'BuildContext' isn't a type.
+  Future<void> _navigateToRecycle(BuildContext context, String materialId) async {
+                                  ^^^^^^^^^^^^
+lib/screens/home_screen.dart:422:11: Error: The getter 'Navigator' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Navigator'.
+    await Navigator.push(
+          ^^^^^^^^^
+lib/screens/home_screen.dart:424:7: Error: The method 'MaterialPageRoute' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'MaterialPageRoute'.
+      MaterialPageRoute(
+      ^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:425:25: Error: The method 'RecyclingScreen' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'RecyclingScreen'.
+        builder: (_) => RecyclingScreen(initialMaterial: materialId),
+                        ^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:433:9: Error: 'IconData' isn't a type.
+  final IconData icon;
+        ^^^^^^^^
+lib/screens/home_screen.dart:436:9: Error: 'Color' isn't a type.
+  final Color color;
+        ^^^^^
+lib/screens/home_screen.dart:437:9: Error: 'VoidCallback' isn't a type.
+  final VoidCallback onTap;
+        ^^^^^^^^^^^^
+lib/screens/home_screen.dart:448:16: Error: 'BuildContext' isn't a type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:460:26: Error: Couldn't find constructor 'EdgeInsets.all'.
+          padding: const EdgeInsets.all(20),
+                         ^^^
+lib/screens/home_screen.dart:465:32: Error: Couldn't find constructor 'EdgeInsets.all'.
+                padding: const EdgeInsets.all(10),
+                               ^^^
+lib/screens/home_screen.dart:472:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 16),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:476:31: Error: Undefined name 'FontWeight'.
+                  fontWeight: FontWeight.bold,
+                              ^^^^^^^^^^
+lib/screens/home_screen.dart:475:30: Error: Couldn't find constructor 'TextStyle'.
+                style: const TextStyle(
+                             ^^^^^^^^^
+lib/screens/home_screen.dart:480:21: Error: Couldn't find constructor 'SizedBox'.
+              const SizedBox(height: 4),
+                    ^^^^^^^^
+lib/screens/home_screen.dart:449:12: Error: The method 'Card' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Card'.
+    return Card(
+           ^^^^
+lib/screens/home_screen.dart:452:14: Error: The method 'RoundedRectangleBorder' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'RoundedRectangleBorder'.
+      shape: RoundedRectangleBorder(
+             ^^^^^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:453:23: Error: The getter 'BorderRadius' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+        borderRadius: BorderRadius.circular(20),
+                      ^^^^^^^^^^^^
+lib/screens/home_screen.dart:454:15: Error: The method 'BorderSide' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'BorderSide'.
+        side: BorderSide(color: color.withOpacity(0.2)),
+              ^^^^^^^^^^
+lib/screens/home_screen.dart:456:14: Error: The method 'InkWell' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'InkWell'.
+      child: InkWell(
+             ^^^^^^^
+lib/screens/home_screen.dart:458:23: Error: The getter 'BorderRadius' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+        borderRadius: BorderRadius.circular(20),
+                      ^^^^^^^^^^^^
+lib/screens/home_screen.dart:459:16: Error: The method 'Padding' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Padding'.
+        child: Padding(
+               ^^^^^^^
+lib/screens/home_screen.dart:461:18: Error: The method 'Column' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Column'.
+          child: Column(
+                 ^^^^^^
+lib/screens/home_screen.dart:462:33: Error: The getter 'CrossAxisAlignment' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'CrossAxisAlignment'.
+            crossAxisAlignment: CrossAxisAlignment.start,
+                                ^^^^^^^^^^^^^^^^^^
+lib/screens/home_screen.dart:464:15: Error: The method 'Container' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Container'.
+              Container(
+              ^^^^^^^^^
+lib/screens/home_screen.dart:466:29: Error: The method 'BoxDecoration' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'BoxDecoration'.
+                decoration: BoxDecoration(
+                            ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:468:33: Error: The getter 'BorderRadius' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+                  borderRadius: BorderRadius.circular(12),
+                                ^^^^^^^^^^^^
+lib/screens/home_screen.dart:470:24: Error: The method 'Icon' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Icon'.
+                child: Icon(icon, size: 28, color: color),
+                       ^^^^
+lib/screens/home_screen.dart:473:15: Error: The method 'Text' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+              Text(
+              ^^^^
+lib/screens/home_screen.dart:481:15: Error: The method 'Text' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+              Text(
+              ^^^^
+lib/screens/home_screen.dart:483:24: Error: The method 'TextStyle' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'TextStyle'.
+                style: TextStyle(
+                       ^^^^^^^^^
+lib/screens/home_screen.dart:485:26: Error: The getter 'Theme' isn't defined for the class '_ActionCard'.
+ - '_ActionCard' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'Theme'.
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                         ^^^^^
+lib/screens/home_screen.dart:497:9: Error: 'IconData' isn't a type.
+  final IconData icon;
+        ^^^^^^^^
+lib/screens/home_screen.dart:499:9: Error: 'Color' isn't a type.
+  final Color color;
+        ^^^^^
+lib/screens/home_screen.dart:500:9: Error: 'VoidCallback' isn't a type.
+  final VoidCallback onTap;
+        ^^^^^^^^^^^^
+lib/screens/home_screen.dart:510:16: Error: 'BuildContext' isn't a type.
+  Widget build(BuildContext context) {
+               ^^^^^^^^^^^^
+lib/screens/home_screen.dart:513:21: Error: Couldn't find constructor 'EdgeInsets.only'.
+      margin: const EdgeInsets.only(right: 12),
+                    ^^^^
+lib/screens/home_screen.dart:520:30: Error: Couldn't find constructor 'EdgeInsets.all'.
+              padding: const EdgeInsets.all(12),
+                             ^^^
+lib/screens/home_screen.dart:527:19: Error: Couldn't find constructor 'SizedBox'.
+            const SizedBox(height: 8),
+                  ^^^^^^^^
+lib/screens/home_screen.dart:530:64: Error: Undefined name 'FontWeight'.
+              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                                                               ^^^^^^^^^^
+lib/screens/home_screen.dart:530:28: Error: Couldn't find constructor 'TextStyle'.
+              style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                           ^^^^^^^^^
+lib/screens/home_screen.dart:511:12: Error: The method 'Container' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Container'.
+    return Container(
+           ^^^^^^^^^
+lib/screens/home_screen.dart:514:14: Error: The method 'InkWell' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'InkWell'.
+      child: InkWell(
+             ^^^^^^^
+lib/screens/home_screen.dart:516:23: Error: The getter 'BorderRadius' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+        borderRadius: BorderRadius.circular(16),
+                      ^^^^^^^^^^^^
+lib/screens/home_screen.dart:517:16: Error: The method 'Column' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Column'.
+        child: Column(
+               ^^^^^^
+lib/screens/home_screen.dart:519:13: Error: The method 'Container' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Container'.
+            Container(
+            ^^^^^^^^^
+lib/screens/home_screen.dart:521:27: Error: The method 'BoxDecoration' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'BoxDecoration'.
+              decoration: BoxDecoration(
+                          ^^^^^^^^^^^^^
+lib/screens/home_screen.dart:523:31: Error: The getter 'BorderRadius' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'BorderRadius'.
+                borderRadius: BorderRadius.circular(16),
+                              ^^^^^^^^^^^^
+lib/screens/home_screen.dart:525:22: Error: The method 'Icon' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Icon'.
+              child: Icon(icon, color: color, size: 24),
+                     ^^^^
+lib/screens/home_screen.dart:528:13: Error: The method 'Text' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'Text'.
+            Text(
+            ^^^^
+lib/screens/home_screen.dart:531:26: Error: The getter 'TextAlign' isn't defined for the class '_MaterialCard#1#0'.
+ - '_MaterialCard#1#0' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'TextAlign'.
+              textAlign: TextAlign.center,
+                         ^^^^^^^^^
+lib/screens/home_screen.dart:19:35: Error: Non-constant list literal is not a constant expression.
+                        children: [
+                                  ^
+Target kernel_snapshot_program failed: Exception
+
+
+> Task :app:compileFlutterBuildDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\flutter\bin\flutter.bat'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 4s
+5 actionable tasks: 1 executed, 4 up-to-date

@@ -1,0 +1,92 @@
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Configure project :shared_preferences_android
+Your project is configured with Android NDK 23.1.7779620, but the following plugin(s) depend on a different Android NDK version:
+- cloud_firestore requires Android NDK 25.1.8937393
+- firebase_auth requires Android NDK 25.1.8937393
+- firebase_core requires Android NDK 25.1.8937393
+- shared_preferences_android requires Android NDK 25.1.8937393
+Fix this issue by using the highest Android NDK version (they are backward compatible).
+Add the following to C:\Users\Usuario\.gemini\antigravity\scratch\ECOCONDOR\ecocondor_app\android\app\build.gradle:
+
+    android {
+        ndkVersion = "25.1.8937393"
+        ...
+    }
+
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+
+> Task :app:compileFlutterBuildDebug
+lib/screens/recycling_screen.dart:25:9: Error: '_quantityController' is already declared in this scope.
+  final _quantityController = TextEditingController();
+        ^^^^^^^^^^^^^^^^^^^
+lib/screens/recycling_screen.dart:17:9: Context: Previous declaration of '_quantityController'.
+  final _quantityController = TextEditingController();
+        ^^^^^^^^^^^^^^^^^^^
+lib/screens/recycling_screen.dart:26:8: Error: '_isLoading' is already declared in this scope.
+  bool _isLoading = false;
+       ^^^^^^^^^^
+lib/screens/recycling_screen.dart:18:8: Context: Previous declaration of '_isLoading'.
+  bool _isLoading = false;
+       ^^^^^^^^^^
+lib/screens/home_screen.dart:231:28: Error: The method '_ActionCard' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_ActionCard'.
+                    child: _ActionCard(
+                           ^^^^^^^^^^^
+lib/screens/home_screen.dart:249:28: Error: The method '_ActionCard' isn't defined for the class '_HomeScreenState'.
+ - '_HomeScreenState' is from 'package:ecocondor_app/screens/home_screen.dart' ('lib/screens/home_screen.dart').
+Try correcting the name to the name of an existing method, or defining a method named '_ActionCard'.
+                    child: _ActionCard(
+                           ^^^^^^^^^^^
+lib/screens/recycling_screen.dart:39:5: Error: Can't use '_quantityController' because it is declared more than once.
+    _quantityController.dispose();
+    ^
+lib/screens/recycling_screen.dart:51:38: Error: Can't use '_quantityController' because it is declared more than once.
+    final quantity = double.tryParse(_quantityController.text);
+                                     ^
+lib/screens/recycling_screen.dart:59:31: Error: Can't assign to this.
+    setState(() => _isLoading = true);
+                              ^
+lib/screens/recycling_screen.dart:74:31: Error: Can't assign to this.
+    setState(() => _isLoading = false);
+                              ^
+lib/screens/recycling_screen.dart:84:7: Error: Can't use '_quantityController' because it is declared more than once.
+      _quantityController.clear();
+      ^
+lib/screens/recycling_screen.dart:186:27: Error: Can't use '_quantityController' because it is declared more than once.
+              controller: _quantityController,
+                          ^
+lib/screens/recycling_screen.dart:198:26: Error: Can't use '_isLoading' because it is declared more than once.
+              onPressed: _isLoading ? null : _registerRecycling,
+                         ^
+lib/screens/recycling_screen.dart:199:21: Error: Can't use '_isLoading' because it is declared more than once.
+              icon: _isLoading 
+                    ^
+Target kernel_snapshot_program failed: Exception
+
+
+> Task :app:compileFlutterBuildDebug FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\flutter\bin\flutter.bat'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 9s
+5 actionable tasks: 1 executed, 4 up-to-date
