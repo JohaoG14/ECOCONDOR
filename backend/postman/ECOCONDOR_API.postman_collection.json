@@ -1,0 +1,160 @@
+{
+    "info": {
+        "_postman_id": "ecocondor-api-collection",
+        "name": "ECOCONDOR API",
+        "description": "Colección de endpoints para la API de ECOCONDOR",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:3000/api"
+        },
+        {
+            "key": "authToken",
+            "value": "TU_TOKEN_JWT_AQUI"
+        }
+    ],
+    "item": [
+        {
+            "name": "Health Check",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/health"
+            }
+        },
+        {
+            "name": "Auth",
+            "item": [
+                {
+                    "name": "Registrar Usuario",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/auth/register",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"uid\": \"test-user-001\",\n  \"email\": \"test@ecocondor.com\",\n  \"displayName\": \"Usuario Prueba\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Obtener Perfil",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/auth/profile",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Recycling",
+            "item": [
+                {
+                    "name": "Registrar Reciclaje",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/recycling/register",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"material\": \"plastico\",\n  \"quantity\": 2.5,\n  \"unit\": \"kg\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Historial de Reciclaje",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/recycling/history?limit=10",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Estadísticas",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/recycling/stats",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Rewards",
+            "item": [
+                {
+                    "name": "Listar Recompensas",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/rewards"
+                    }
+                },
+                {
+                    "name": "Obtener Puntos",
+                    "request": {
+                        "method": "GET",
+                        "url": "{{baseUrl}}/rewards/points",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Canjear Recompensa",
+                    "request": {
+                        "method": "POST",
+                        "url": "{{baseUrl}}/rewards/redeem",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {{authToken}}"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"rewardId\": \"reward-001\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
